@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disease-Gene Associations - Gene Fact Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">🧬 Gene Explorer</a>
+      <a href="about.html">Learn About Molecular Biology</a>
+      <a href="disease.html" class="active">🔬 Disease Research</a>
+    </nav>
+    
+    <h1>🔬 Disease-Gene Associations</h1>
+    <p>Search for genes associated with diseases based on scientific evidence!</p>
+    
+    <div class="search-section">
+      <input type="text" id="diseaseInput" placeholder="e.g., breast cancer, Alzheimer's disease, diabetes" />
+      <button onclick="searchDiseaseGenes()">Search Associations</button>
+      <button onclick="randomDisease()">Random Example</button>
+    </div>
+
+    <div id="diseaseResult"></div>
+  </div>
+
+  <script src="disease.js"></script>
+</body>
+
+</html>

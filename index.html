@@ -1,0 +1,91 @@
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en"> -->
+
+<!-- <head> -->
+<!-- <meta charset="UTF-8" /> -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+<!-- <title>Gene Fact Explorer</title> -->
+<!-- <link rel="stylesheet" href="style.css" /> -->
+<!-- </head> -->
+
+<!-- <body> -->
+<!-- <div class="container"> -->
+<!-- <nav> -->
+<!-- <a href="index.html" class="active">🧬 Gene Explorer</a> -->
+<!-- <a href="about.html">Learn About Molecular Biology</a> -->
+<!-- <a href="disease.html">🔬 Disease Research</a> -->
+<!-- </nav> -->
+
+<!-- <h1>🧬 Gene Fact Explorer</h1> -->
+<!-- <p>Enter an Entrez ID or Gene Symbol to learn about a gene!</p> -->
+<!-- <input type="text" id="geneInput" placeholder="e.g., 7157 or TP53" /> -->
+<!-- <input type="text" id="geneInput" placeholder="Enter Gene ID or Symbol" oninput="autocompleteGene()" -->
+<!-- list="suggestions"> -->
+<!-- <datalist id="suggestions"></datalist> -->
+<!-- <button onclick="getGeneInfo()">Get Gene Info</button> -->
+<!-- <button onclick="randomGene()">Random Example</button> -->
+<!-- <div id="result"></div> -->
+<!-- </div> -->
+
+<!-- <script src="geneFacts.js"></script> -->
+<!-- <script src="script.js"></script> -->
+<!-- </body> -->
+
+<!-- </html>
+ -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gene Fact Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="active">🧬 Gene Explorer</a>
+      <a href="about.html">Learn About Molecular Biology</a>
+      <a href="disease.html">🔬 Disease Research</a>
+    </nav>
+
+    <h1>🧬 Gene Fact Explorer</h1>
+    <p>Enter an Entrez ID, Ensembl ID, or Gene Symbol to explore gene information.</p>
+
+    <div>
+      <label for="geneInput"><strong>Gene ID or Symbol:</strong></label><br>
+      <input type="text" id="geneInput" placeholder="e.g., 7157, ENSG00000141510, TP53" oninput="autocompleteGene()"
+        list="suggestions" />
+      <datalist id="suggestions"></datalist>
+    </div>
+
+    <div style="margin-top: 10px;">
+      <label for="speciesSelect"><strong>Species:</strong></label><br>
+      <select id="speciesSelect">
+        <option value="human" selected>Human</option>
+        <option value="mouse">Mouse</option>
+        <option value="rat">Rat</option>
+        <!-- add more species as needed -->
+      </select>
+    </div>
+
+    <div style="margin-top: 15px;">
+      <button onclick="getGeneInfo()">🔍 Get Gene Info</button>
+      <button onclick="randomGene()">🎲 Random Example</button>
+    </div>
+
+    <div id="result" style="margin-top: 20px;"></div>
+  </div>
+
+  <script src="geneFacts.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

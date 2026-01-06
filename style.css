@@ -1,0 +1,228 @@
+body {
+  font-family: sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 1em;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #f0f4f8;
+}
+
+nav a {
+  text-decoration: none;
+  color: #666;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+  background: #007acc;
+  color: white;
+}
+
+.info-section {
+  text-align: left;
+  margin-bottom: 1.5em;
+  padding: 1em;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.info-section h2 {
+  color: #007acc;
+  margin-top: 0;
+  text-align: center;
+}
+
+.info-section ul {
+  margin: 0.5em 0;
+}
+
+.info-section li {
+  margin-bottom: 0.3em;
+}
+
+input {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  width: 80%;
+}
+
+button {
+  margin: 0.25em;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+/* Disease page styles */
+.search-section {
+  margin-bottom: 2em;
+}
+
+.disease-info {
+  background: #e8f4f8;
+  padding: 1.5em;
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+  text-align: left;
+}
+
+.disease-info h2 {
+  margin-top: 0;
+  color: #007acc;
+  text-align: center;
+}
+
+.disease-description {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1em;
+}
+
+.results-count {
+  font-weight: bold;
+  color: #333;
+}
+
+.associations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.association-item {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #007acc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.association-item:hover {
+  background: #e9ecef;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gene-info {
+  flex: 1;
+}
+
+.gene-info h4 {
+  margin: 0 0 0.5em 0;
+  color: #007acc;
+  font-size: 1.2em;
+}
+
+.gene-name {
+  margin: 0 0 1em 0;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.evidence-score {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.score-label {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.score-value {
+  font-weight: bold;
+  color: #007acc;
+  min-width: 50px;
+}
+
+.score-bar {
+  flex: 1;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 200px;
+}
+
+.score-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff6b6b 0%, #feca57 50%, #48ca48 100%);
+  transition: width 0.3s ease;
+}
+
+.association-arrow {
+  font-size: 1.5em;
+  color: #007acc;
+  margin-left: 1em;
+}
+
+.data-source {
+  background: #f0f4f8;
+  padding: 1em;
+  border-radius: 8px;
+  font-size: 0.9em;
+  text-align: left;
+}
+
+.data-source a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.data-source a:hover {
+  text-decoration: underline;
+}
+
+.no-results, .error {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  padding: 2em;
+  border-radius: 8px;
+  text-align: center;
+  color: #856404;
+}
+
+.error {
+  background: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+#diseaseResult {
+  margin-top: 1em;
+}
