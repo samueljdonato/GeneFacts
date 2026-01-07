@@ -1,5 +1,7 @@
 # GeneFacts - Gene Fact Explorer
 
+https://genefacts.netlify.app
+
 This acts as a web based app that allows the user to explore some gene information and attempt to discover disease gene associatons. The site provides an interactive interface to help query genetic data and learn about a condition or a gene without needing to navigate technical bioinformatics and genetics databases.
 
 ## Features
@@ -23,7 +25,7 @@ GeneFacts-main/
 ├── geneFacts.js        # Pre-defined gene facts database
 ├── style.css           # Styling for all pages
 ├── requirements.txt    # Python dependencies (if any)
-└── .replit             # Replit deployment configuration
+└── (other configs)     # Optional: CI / hosting configs if present
 ```
 
 ## How It Works
